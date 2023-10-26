@@ -1,0 +1,4 @@
+pyTelegramBotAPI==4.8.0
+# requests==2.28.1  # Возможно, заработает без этой библиотеки
+# beautifulsoup4==4.11.1
+# lxml==4.9.2

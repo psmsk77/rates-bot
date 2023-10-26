@@ -58,4 +58,5 @@ class BotDB:
 
     def close(self):
         """Закрытие соединения с БД"""
-        self.connect.close()
+        self.conn.close()
+        # self.connect.close()
