@@ -1,0 +1,16 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Test API
+servers:
+- url: <Ваш url на служебный домен в API Gateway>
+paths:
+  /message:
+    post:
+      x-yc-apigateway-integration:
+        type: cloud_ymq
+        action: SendMessage
+        queue_url: <Ваш url из Message Queue>
+        folder_id: <Ваш folder_id>
+        delay_seconds: 0
+        service_account_id: <Ваш service_account_id>
